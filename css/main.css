@@ -1089,7 +1089,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer-social {
-    text-align: start;
+    text-align: left;
   }
 }
 .footer-social__title {
@@ -1105,6 +1105,7 @@ img {
   list-style: none;
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 .footer-social__item {
   width: 44px;
