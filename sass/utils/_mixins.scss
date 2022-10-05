@@ -1,6 +1,20 @@
-
 @mixin transition($property...) {
-    transition-property: $property; 
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: $property;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  color: $page-color;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
 }
